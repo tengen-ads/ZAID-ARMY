@@ -1,271 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>𝟵𝗫 𝗣𝗥𝗢𝗙𝗜𝗧 𝗠𝗔𝗚𝗜𝗖 </title>
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1154023916773262');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1154023916773262&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Devil Army</title>
 
-  
 <style>
-:root{
-  --panel:#071e1d;
-  --teal1:#0ef2d5;
-  --teal2:#13f2ff;
-  --btn-text:#001818;
-  --muted:rgba(255,255,255,0.75);
-  --label-red:#ff2f5a;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle, #1a1400, #000);
+    color: #fff;
+    text-align: center;
 }
 
-body{
-  margin:0;
-  font-family:'Poppins',sans-serif;
-  background:linear-gradient(180deg,#061214,#081617,#071013);
-  color:#fff;
-  overflow-x:hidden;
+.container {
+    max-width: 400px;
+    margin: 40px auto;
+    background: rgba(30, 25, 0, 0.9);
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 0 35px rgba(255, 215, 0, 0.5);
 }
 
-/* CENTER WRAPPER */
-.center-wrap{
-  display:flex;
-  justify-content:center;
-  padding:40px 0;
+.logo img {
+    width: 140px;
+    border-radius: 50%;
+    border: 4px solid gold;
+    box-shadow: 0 0 25px gold;
 }
 
-/* MAIN CARD */
-.wrap{
-  max-width:400px;
-  width:80%;
-  background:var(--panel);
-  border-radius:20px;
-  padding:22px 20px 30px;
-  text-align:center;
-  position:relative;
-
-  box-shadow:
-    0 0 0 1px rgba(14,242,213,0.35),
-    0 0 20px rgba(14,242,213,0.25),
-    0 0 40px rgba(19,242,255,0.15),
-    0 25px 45px rgba(0,0,0,0.7);
-
-  animation: edgeGlow 3s ease-in-out infinite alternate;
+h1 {
+    margin-top: 20px;
+    font-size: 26px;
+    letter-spacing: 2px;
+    color: gold;
 }
 
-@keyframes edgeGlow{
-  from{
-    box-shadow:
-      0 0 0 1px rgba(67, 242, 14, 0.25),
-      0 0 16px rgba(14, 242, 37, 0.18),
-      0 0 32px rgba(19,242,255,0.1),
-      0 25px 45px rgba(0,0,0,0.7);
-  }
-  to{
-    box-shadow:
-      0 0 0 1px rgba(14, 242, 41, 0.45),
-      0 0 28px rgba(14,242,213,0.35),
-      0 0 55px rgba(19,242,255,0.22),
-      0 25px 45px rgba(0,0,0,0.7);
-  }
+.sub {
+    color: #ffd700;
+    font-size: 14px;
+    margin: 10px 0 20px;
+    letter-spacing: 1px;
 }
 
-.marquee{
-  background:linear-gradient(90deg,var(--teal1),var(--teal2));
-  color:var(--btn-text);
-  font-weight:900;
-  padding:10px 0;
-  border-radius:12px;
-  margin-bottom:12px;
-  font-size:15px;
-  letter-spacing:1px;
+.btn {
+    display: inline-block;
+    background: linear-gradient(45deg, #ffd700, #ffb300);
+    color: #000;
+    padding: 15px 30px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 0 0 20px gold;
+    margin-top: 15px;
 }
 
-.profile-box{
-  width:180px;
-  height:180px;
-  margin:12px auto 18px;
-  border-radius:18px;
-  overflow:hidden;
-  border:4px solid rgba(14,242,213,0.25);
-}
-.profile-box img{
-  width:100%;
-  height:100%;
-  object-fit:cover;
+.members {
+    margin-top: 20px;
+    font-size: 14px;
 }
 
-h1{
-  font-size:28px;
-  margin:6px 0;
-  font-weight:800;
-}
-.subtitle{
-  font-size:14px;
-  color:var(--muted);
-  margin-bottom:18px;
+.footer {
+    margin-top: 30px;
+    font-size: 12px;
+    color: #aaa;
 }
 
-.pill{
-  display:block;
-  width:100%;
-  padding:18px 0;
-  margin:14px 0;
-  border-radius:50px;
-  background:linear-gradient(90deg,var(--teal1),var(--teal2));
-  color:var(--btn-text);
-  font-weight:900;
-  font-size:18px;
-  text-decoration:none;
-  letter-spacing:1px;
+.footer span {
+    color: gold;
 }
-.pill-sub{
-  font-size:12px;
-  color:var(--muted);
-}
-
-.hurry{
-  color:var(--teal1);
-  font-weight:800;
-  margin-top:6px;
-}
-
-.timer{
-  display:flex;
-  justify-content:center;
-  gap:15px;
-  margin:16px 0 20px;
-}
-.cell{
-  background:rgba(1,40,38,0.6);
-  padding:12px 16px;
-  border-radius:10px;
-  width:70px;
-}
-.num{
-  font-size:28px;
-  font-weight:800;
-}
-.lab{
-  font-size:12px;
-  color:var(--label-red);
-  margin-top:4px;
-  font-weight:700;
-}
-
-.features{margin-bottom:18px;}
-.feature-item{
-  margin:6px 0;
-  font-weight:700;
-  color:var(--muted);
-}
-
-.divider{
-  height:1px;
-  background:rgba(255,255,255,0.05);
-  margin:20px auto;
-}
-
-.exp h2{font-size:20px;}
-.big{
-  color:var(--teal1);
-  font-weight:800;
-}
-.mini{
-  font-size:12px;
-  opacity:0.6;
-  letter-spacing:2px;
-}
-
-/* CONTACT SECTION */
-.contact-section{
-  text-align:center;
-  padding:30px 20px;
-  background:#071e1d;
-  max-width:400px;
-  margin:30px auto 50px;
-  border-radius:15px;
-  box-shadow:0 0 15px rgba(14,242,213,0.2);
-}
-
-.contact-btn{
-  background:linear-gradient(90deg,#0ef2d5,#13f2ff);
-  color:#001818;
-  padding:10px 18px;
-  text-decoration:none;
-  border-radius:30px;
-  font-weight:800;
-  font-size:14px;
-  display:inline-block;
-}
-
 </style>
 
-<script>
-let m=30,s=0;
-setInterval(()=>{
-  document.getElementById("min").innerText=String(m).padStart(2,'0');
-  document.getElementById("sec").innerText=String(s).padStart(2,'0');
-  if(s===0){ if(m===0)return; m--; s=59; } else s--;
-},1000);
-</script>
 </head>
 
 <body>
 
-<div class="center-wrap">
-  <div class="wrap">
+<div class="container">
 
-    <div class="marquee">
-      <marquee scrollamount="4">🔥 FREE VIP SURESHOT • LIMITED TIME • JOIN FAST 🔥</marquee>
+    <div class="logo">
+        <!-- IMAGE CHANGE HERE -->
+        <img src="https://via.placeholder.com/150" alt="Devil">
     </div>
 
-    <div class="profile-box">
-      <img src="https://image2url.com/r2/default/images/1774965285605-a2c46c3f-050f-4dc3-b403-bf476f27579f.jpg">
+    <h1>DEVIL ARMY 🔱</h1>
+
+    <div class="sub">
+        100% NUMBER FIXER | PREDICTION KING
     </div>
 
-    <h1>𝟵𝗫 𝗣𝗥𝗢𝗙𝗜𝗧 𝗠𝗔𝗚𝗜𝗖</h1>
-    <div class="subtitle">JOIN FAST FOR FREE SURESHOT VIP HACKS</div>
+    <!-- TELEGRAM BUTTON -->
+    <a class="btn" href="https://t.me/yourchannel" target="_blank">
+        JOIN TELEGRAM ⚡
+    </a>
 
-    <a class="pill" href="https://t.me/+zCrhWg337hlhOTY1" >𝐉𝐎𝐈𝐍 𝐇𝐀𝐂𝐊 𝐂𝐇𝐀𝐍𝐍𝐄𝐋</a>
-    <div class="pill-sub">FREE VIP HACKS</div>
-
-    <div class="hurry">HURRY UP! JOIN NOW</div>
-
-    <div class="timer">
-      <div class="cell"><div class="num" id="min">30</div><div class="lab">MIN</div></div>
-      <div class="cell"><div class="num" id="sec">00</div><div class="lab">SEC</div></div>
+    <div class="members">
+        ★ 50,000+ MEMBERS ACROSS INDIA ★
+        <br><br>
+        KING OF COLOUR ANALYSIS
     </div>
 
-    <div class="features">
-      <div class="feature-item">⭐ 100% WINNING SURESHOT</div>
-      <div class="feature-item">⭐ 100% LOSS RECOVERY</div>
-      <div class="feature-item">⭐ MONTHLY INCOME 30K–50K</div>
-    </div>
+</div>
 
-    <div class="divider"></div>
-
-    <div class="exp">
-      <h2>5+ YEARS EXPERIENCE</h2>
-      <div class="big">10 LAKH+ WINNING</div>
-      <div class="mini">ADS SET BY @TENGENADS</div>
-    </div>
-
-  </div>
+<div class="footer">
+    ADS BY <span>AJ</span>
 </div>
 
 </body>
